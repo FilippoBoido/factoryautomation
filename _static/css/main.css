@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #534caf;
     color: white;
     text-align: center;
     padding: 1em;
@@ -64,4 +64,16 @@ footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 1em;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
 }
