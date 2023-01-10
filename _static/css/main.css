@@ -75,6 +75,16 @@ footer {
     line-height: 1.5em;
 }
 
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5); /* This will make the box semi-transparent */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
+    width: 40%; /* This will set the width of the box to 2/5 of the screen */
+    padding: 1em; /* Add some padding around the content */
+}
+
 #background-video {
     position: fixed;
     top: 50%;
