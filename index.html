@@ -7,11 +7,13 @@
 </head>
 
 <body>
+
     <header>
         <video id="background-video" autoplay loop muted>
             <source src="_static/videos/production ID_4751312.mp4" type="video/mp4">
         </video>
-
+        <button id="english-btn">EN</button>
+        <button id="german-btn">DE</button>
         <h1>Sondermaschinen und Backend Softwareentwicklung</h1>
         <nav>
             <ul>
@@ -21,8 +23,11 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
+
     </header>
+
     <main class="site-container">
         <div class="transparent-box">
             <section id="about">
@@ -45,7 +50,7 @@
                 </ul>
             </section>
             <section id="skills">
-                <h2>Skills</h2>
+                <h2 class="translate">Skills</h2>
                 <ul>
                     <li>Skill 1</li>
                     <li>Skill 2</li>
@@ -69,6 +74,27 @@
     <footer>
         <p>Copyright © 2023 Filippo Boido</p>
     </footer>
+    <script>
+        // English button
+        document.getElementById('english-btn').addEventListener('click', function () {
+        // Select all elements with the class "translate"
+        var elements = document.getElementsByClassName('translate');
+        // Change the text of each element to English
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = 'English';
+        }
+        });
+
+        // German button
+        document.getElementById('german-btn').addEventListener('click', function () {
+        // Select all elements with the class "translate"
+        var elements = document.getElementsByClassName('translate');
+        // Change the text of each element to German
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = 'Deutsch';
+        }
+        });
+    </script>
 </body>
 
 </html>

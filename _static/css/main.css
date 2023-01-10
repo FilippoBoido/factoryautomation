@@ -56,20 +56,31 @@ header nav ul li a:hover {
     display: flex;
     position: relative;
     flex-direction: column;
-    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+    min-height: 100vh;
+    /* This will make sure that the container takes up the entire screen height */
 }
 
 .transparent-box {
-    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
-    position: absolute;
-    top: 50%;
-    transform: translateY(50%, 50%); 
-    width: 80%; 
-    padding: 1em; /* Add some padding around the content */
-    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
+    background-color: rgba(46, 46, 103, 0.5);
+    /* This will make the box semi-transparent */
+    position: relative;
+    margin: auto;
+    top: 10%;
+    width: 80%;
+    padding: 1em;
+    /* Add some padding around the content */
+    border-radius: 10px;
+    /* This will make the edges round with a radius of 10 pixels */
     color: #ffffff;
-    box-sizing: border-box;
-    margin: 0 auto;
+}
+
+button {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right; /* Float the buttons to the right */
 }
 
 main {
@@ -100,16 +111,3 @@ footer {
     font-size: 0.8em;
     line-height: 1.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
