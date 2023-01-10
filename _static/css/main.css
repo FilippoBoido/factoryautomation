@@ -65,7 +65,7 @@ header nav ul li a:hover {
     background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
+    transform: translateY(-50%); 
     width: 80%; 
     padding: 1em; /* Add some padding around the content */
     border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
