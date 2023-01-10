@@ -121,4 +121,25 @@ footer {
         margin-right: 0.5em;
         margin-bottom: 0.5em;
     }
+
+    .site-container {
+        font-size: 1.2em; /* Increase the font size */
+    }
+    h2 {
+        font-size: 1.5em; /* Increase the font size of headings */
+    }
+    ul {
+        padding-left: 2em; /* Increase the space between bullet points and text */
+    }
+    /* center all elements inside transparent-box */
+    .transparent-box{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /* set max width for transparent-box */
+    .transparent-box {
+        max-width: 90%;
+    }
 }
