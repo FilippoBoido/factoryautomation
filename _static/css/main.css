@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #534caf;
+    background-color: #140e4b;
     color: white;
     text-align: center;
     padding: 1em;
@@ -61,8 +61,8 @@ main a:hover {
 }
 
 footer {
-    background-color: #f1f1f1;
-    text-align: end;
+    background-color: #140e4b;
+    text-align: center;
     padding: 1em;
 }
 
