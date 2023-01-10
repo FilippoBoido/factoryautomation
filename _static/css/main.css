@@ -29,6 +29,15 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+footer {
+    background-color: #3a3567;
+    text-align: center;
+    padding: 1em;
+    color: #ffffff;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -91,114 +100,8 @@ main a:hover {
     color: #3e8e41;
 }
 
-footer {
-    background-color: #3a3567;
-    text-align: center;
-    padding: 1em;
-    color: #ffffff;
-    font-size: 0.8em;
-    line-height: 1.5em;
-}
 
-/* Styles for screens smaller than 600px */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 0.5em;
-    }
 
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header nav {
-        flex-wrap: wrap;
-    }
-
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header nav ul li {
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
-    }
-
-    h2 {
-        font-size: 1.5em; /* Increase the font size of headings */
-    }
-    ul {
-        padding-left: 2em; /* Increase the space between bullet points and text */
-    }
-    /*
-    .site-container {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        font-size: 1.2em; 
-        min-height: 100vh; 
-    }
-    */
-    /* center all elements inside transparent-box */
-    
-    
-}
-
-/* Styles for screens between 600px and 1024px */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-    header {
-        padding: 1em; /* Increase padding for larger screens */
-    }
-
-    header h1 {
-        font-size: 2em; /* Increase font size for larger screens */
-    }
-
-    header nav {
-        display: flex; /* Display the nav as a flex container */
-        align-items: center; /* Center the nav items vertically */
-    }
-
-    header nav ul {
-        justify-content: space-between; /* Space the nav items evenly */
-    }
-
-    header nav ul li {
-        margin-right: 1em; /* Increase the margin for larger screens */
-        margin-bottom: 0; /* Remove the bottom margin */
-    }
-
-    h2 {
-        font-size: 2em; /* Increase the font size of headings for larger screens */
-    }
-    ul {
-        padding-left: 1em; /* Decrease the space between bullet points and text */
-    }
-
-    /*
-    .site-container {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        font-size: 1.4em; 
-        min-height: 100vh; 
-    }
-    */
-    /* center all elements inside transparent-box
-    .transparent-box{
-        max-width: 80%; 
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    .transparent-box {
-        /*display: flex;*/
-        /*flex-wrap:wrap;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        max-width: 100%;
-    }
-}
 
 
 
