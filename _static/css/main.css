@@ -1,20 +1,9 @@
-.transparent-box {
-    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
-    width: 40%; /* This will set the width of the box to 2/5 of the screen */
-    padding: 1em; /* Add some padding around the content */
-    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
-    color: #ffffff;
-}
 
-.site-container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    font-size: 1.6em; /* Increase the font size */
-    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+header {
+    background-color: #140e4b;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
 
 #background-video {
@@ -27,6 +16,25 @@
     height: auto;
     z-index: -1;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.site-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    font-size: 1.6em; /* Increase the font size */
+    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+}
+
+.transparent-box {
+    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
+    width: 40%; /* This will set the width of the box to 2/5 of the screen */
+    padding: 1em; /* Add some padding around the content */
+    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
+    color: #ffffff;
 }
 
 footer {
@@ -44,12 +52,7 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #140e4b;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
+
 
 header h1 {
     margin: 0;
