@@ -1,3 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 header {
     background-color: #140e4b;
@@ -5,54 +10,6 @@ header {
     text-align: center;
     padding: 1em;
 }
-
-#background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.site-container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    font-size: 1.6em; /* Increase the font size */
-    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
-}
-
-.transparent-box {
-    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
-    width: 40%; /* This will set the width of the box to 2/5 of the screen */
-    padding: 1em; /* Add some padding around the content */
-    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
-    color: #ffffff;
-}
-
-footer {
-    background-color: #3a3567;
-    text-align: center;
-    padding: 1em;
-    color: #ffffff;
-    font-size: 0.8em;
-    line-height: 1.5em;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
 
 header h1 {
     margin: 0;
@@ -83,6 +40,40 @@ header nav ul li a:hover {
     color: #f1f1f1;
 }
 
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.site-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    position: relative;
+    margin: 0 auto;
+    font-size: 1.6em; /* Increase the font size */
+    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+}
+
+.transparent-box {
+    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
+    width: 80%; 
+    padding: 1em; /* Add some padding around the content */
+    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 main {
     padding: 1em;
 }
@@ -102,6 +93,21 @@ main a {
 main a:hover {
     color: #3e8e41;
 }
+
+footer {
+    background-color: #3a3567;
+    text-align: center;
+    padding: 1em;
+    color: #ffffff;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
 
 
 
