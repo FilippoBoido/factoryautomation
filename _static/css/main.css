@@ -84,6 +84,7 @@ footer {
     width: 40%; /* This will set the width of the box to 2/5 of the screen */
     padding: 1em; /* Add some padding around the content */
     border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
+    color: #ffffff;
 }
 
 #background-video {
@@ -97,9 +98,8 @@ footer {
     z-index: -1;
     transform: translateX(-50%) translateY(-50%);
 }
-
-/* Media query for screens smaller than 600px */
-@media (max-width: 1000px) {
+/* Styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
     header {
         padding: 0.5em;
     }
@@ -143,3 +143,83 @@ footer {
         max-width: 90%;
     }
 }
+
+/* Styles for screens between 600px and 1024px */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    header {
+        padding: 1em; /* Increase padding for larger screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Increase font size for larger screens */
+    }
+
+    header nav {
+        display: flex; /* Display the nav as a flex container */
+        align-items: center; /* Center the nav items vertically */
+    }
+
+    header nav ul {
+        justify-content: space-between; /* Space the nav items evenly */
+    }
+
+    header nav ul li {
+        margin-right: 1em; /* Increase the margin for larger screens */
+        margin-bottom: 0; /* Remove the bottom margin */
+    }
+
+    .site-container {
+        font-size: 1.4em; /* Increase the font size for larger screens */
+    }
+    h2 {
+        font-size: 2em; /* Increase the font size of headings for larger screens */
+    }
+    ul {
+        padding-left: 1em; /* Decrease the space between bullet points and text */
+    }
+    /* center all elements inside transparent-box */
+    .transparent-box{
+        max-width: 80%; /* decrease the max-width for larger screens */
+    }
+}
+
+
+/* Styles for screens larger than 1024px */
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 2em; /* Increase padding for larger screens */
+    }
+
+    header h1 {
+        font-size: 3em; /* Increase font size for larger screens */
+    }
+
+    header nav {
+        display: flex; /* Display the nav as a flex container */
+        align-items: center; /* Center the nav items vertically */
+    }
+
+    header nav ul {
+        justify-content: flex-end; /* Align the nav items to the right */
+    }
+
+    header nav ul li {
+        margin-right: 2em; /* Increase the margin for larger screens */
+        margin-bottom: 0; /* Remove the bottom margin */
+    }
+
+    .site-container {
+        font-size: 1.6em; /* Increase the font size for larger screens */
+    }
+    h2 {
+        font-size: 3em; /* Increase the font size of headings for larger screens */
+    }
+    ul {
+        padding-left: 1em; /* Decrease the space between bullet points and text */
+    }
+    /* center all elements inside transparent-box */
+    .transparent-box{
+        max-width: 70%; /* decrease the max-width for larger screens */
+    }
+}
+
