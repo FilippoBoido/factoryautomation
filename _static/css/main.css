@@ -139,13 +139,7 @@ footer {
     }
     */
     /* center all elements inside transparent-box */
-    .transparent-box{
-        /*display: flex;*/
-        /*flex-wrap:wrap;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        max-width: 100%;
-    }
+    
     
 }
 
