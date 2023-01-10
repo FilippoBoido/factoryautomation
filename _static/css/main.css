@@ -137,16 +137,16 @@ footer {
         min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
     }
 
-    /* center all elements inside transparent-box 
+    /* center all elements inside transparent-box */
     .transparent-box{
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 90%;
+        /*display: flex;*/
+        /*flex-wrap:wrap;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        max-width: 100%;
 
     }
-    */
+    
     
 }
 
