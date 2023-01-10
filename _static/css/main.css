@@ -1,3 +1,9 @@
+.site-container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -64,6 +70,9 @@ footer {
     background-color: #140e4b;
     text-align: center;
     padding: 1em;
+    color: #ffffff;
+    font-size: 0.8em;
+    line-height: 1.5em;
 }
 
 #background-video {
