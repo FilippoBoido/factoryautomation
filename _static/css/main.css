@@ -67,7 +67,7 @@ main a:hover {
 }
 
 footer {
-    background-color: #140e4b;
+    background-color: #3a3567;
     text-align: center;
     padding: 1em;
     color: #ffffff;
@@ -76,13 +76,14 @@ footer {
 }
 
 .transparent-box {
-    background-color: rgba(255, 255, 255, 0.5); /* This will make the box semi-transparent */
+    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
     width: 40%; /* This will set the width of the box to 2/5 of the screen */
     padding: 1em; /* Add some padding around the content */
+    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
 }
 
 #background-video {
