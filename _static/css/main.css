@@ -71,18 +71,6 @@ footer {
     line-height: 1.5em;
 }
 
-.transparent-box {
-    background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
-    width: 40%; /* This will set the width of the box to 2/5 of the screen */
-    padding: 1em; /* Add some padding around the content */
-    border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
-    color: #ffffff;
-}
-
 #background-video {
     position: fixed;
     top: 50%;
@@ -118,6 +106,13 @@ footer {
         margin-bottom: 0.5em;
     }
 
+    h2 {
+        font-size: 1.5em; /* Increase the font size of headings */
+    }
+    ul {
+        padding-left: 2em; /* Increase the space between bullet points and text */
+    }
+
     .site-container {
         display: grid;
         grid-template-rows: 1fr auto;
@@ -125,13 +120,7 @@ footer {
         min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
     }
 
-    h2 {
-        font-size: 1.5em; /* Increase the font size of headings */
-    }
-    ul {
-        padding-left: 2em; /* Increase the space between bullet points and text */
-    }
-    /* center all elements inside transparent-box */
+    /* center all elements inside transparent-box 
     .transparent-box{
         display: flex;
         flex-wrap:wrap;
@@ -139,6 +128,18 @@ footer {
         align-items: center;
         max-width: 90%;
 
+    }
+    */
+    .transparent-box {
+        background-color: rgba(46, 46, 103, 0.5); /* This will make the box semi-transparent */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* This will center the box both horizontally and vertically */
+        width: 40%; /* This will set the width of the box to 2/5 of the screen */
+        padding: 1em; /* Add some padding around the content */
+        border-radius: 10px; /* This will make the edges round with a radius of 10 pixels */
+        color: #ffffff;
     }
 }
 
@@ -166,6 +167,13 @@ footer {
         margin-bottom: 0; /* Remove the bottom margin */
     }
 
+    h2 {
+        font-size: 2em; /* Increase the font size of headings for larger screens */
+    }
+    ul {
+        padding-left: 1em; /* Decrease the space between bullet points and text */
+    }
+
     .site-container {
         display: grid;
         grid-template-rows: 1fr auto;
@@ -173,12 +181,6 @@ footer {
         min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
     }
 
-    h2 {
-        font-size: 2em; /* Increase the font size of headings for larger screens */
-    }
-    ul {
-        padding-left: 1em; /* Decrease the space between bullet points and text */
-    }
     /* center all elements inside transparent-box */
     .transparent-box{
         max-width: 80%; /* decrease the max-width for larger screens */
@@ -214,18 +216,18 @@ footer {
         margin-bottom: 0; /* Remove the bottom margin */
     }
 
-    .site-container {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        font-size: 1.6em; /* Increase the font size */
-        min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
-    }
-    
     h2 {
         font-size: 3em; /* Increase the font size of headings for larger screens */
     }
     ul {
         padding-left: 1em; /* Decrease the space between bullet points and text */
+    }
+
+    .site-container {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        font-size: 1.6em; /* Increase the font size */
+        min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
     }
     /* center all elements inside transparent-box */
     .transparent-box{
