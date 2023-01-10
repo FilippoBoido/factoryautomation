@@ -17,6 +17,18 @@
     min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
 }
 
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -88,17 +100,6 @@ footer {
     line-height: 1.5em;
 }
 
-#background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
-}
 /* Styles for screens smaller than 600px */
 @media screen and (max-width: 600px) {
     header {
@@ -129,14 +130,14 @@ footer {
     ul {
         padding-left: 2em; /* Increase the space between bullet points and text */
     }
-
+    /*
     .site-container {
         display: grid;
         grid-template-rows: 1fr auto;
-        font-size: 1.2em; /* Increase the font size */
-        min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+        font-size: 1.2em; 
+        min-height: 100vh; 
     }
-
+    */
     /* center all elements inside transparent-box */
     .transparent-box{
         /*display: flex;*/
@@ -144,9 +145,7 @@ footer {
         /*justify-content: center;*/
         /*align-items: center;*/
         max-width: 100%;
-
     }
-    
     
 }
 
@@ -181,13 +180,14 @@ footer {
         padding-left: 1em; /* Decrease the space between bullet points and text */
     }
 
+    /*
     .site-container {
         display: grid;
         grid-template-rows: 1fr auto;
-        font-size: 1.4em; /* Increase the font size */
-        min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
+        font-size: 1.4em; 
+        min-height: 100vh; 
     }
-
+    */
     /* center all elements inside transparent-box
     .transparent-box{
         max-width: 80%; 
@@ -197,55 +197,15 @@ footer {
         align-items: center;
     } */
 
-    .transparent-box{
+    .transparent-box {
         /*display: flex;*/
         /*flex-wrap:wrap;*/
         /*justify-content: center;*/
         /*align-items: center;*/
         max-width: 100%;
-
     }
 }
 
 
-/* Styles for screens larger than 1024px */
-@media screen and (min-width: 1024px) {
-    header {
-        padding: 2em; /* Increase padding for larger screens */
-    }
 
-    header h1 {
-        font-size: 3em; /* Increase font size for larger screens */
-    }
-
-    header nav {
-        display: flex; /* Display the nav as a flex container */
-        align-items: center; /* Center the nav items vertically */
-    }
-
-    header nav ul {
-        justify-content: flex-end; /* Align the nav items to the right */
-    }
-
-    header nav ul li {
-        margin-right: 2em; /* Increase the margin for larger screens */
-        margin-bottom: 0; /* Remove the bottom margin */
-    }
-
-    h2 {
-        font-size: 3em; /* Increase the font size of headings for larger screens */
-    }
-    ul {
-        padding-left: 1em; /* Decrease the space between bullet points and text */
-    }
-    
-    /* center all elements inside transparent-box
-    .transparent-box{
-        max-width: 70%; 
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: center;
-        align-items: center;
-    } */
-}
 
