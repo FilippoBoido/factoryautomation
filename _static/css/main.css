@@ -53,11 +53,8 @@ header nav ul li a:hover {
 }
 
 .site-container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    position: relative;
-    margin: 0 auto;
-    font-size: 1.6em; /* Increase the font size */
+    display: flex;
+    flex-direction: column;
     min-height: 100vh; /* This will make sure that the container takes up the entire screen height */
 }
 
