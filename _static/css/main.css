@@ -75,7 +75,7 @@ header nav ul li a:hover {
 }
 .about{
     text-align: center;
-    padding-bottom: 4%;
+    padding-bottom: 1%;
 }
 
 #about-text {
@@ -90,6 +90,7 @@ header nav ul li a:hover {
 
 .contact{
     text-align: center;
+    padding-bottom: 1%;
 }
 
 #email{
