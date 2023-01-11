@@ -73,13 +73,32 @@ header nav ul li a:hover {
     /* This will make the edges round with a radius of 10 pixels */
     color: #ffffff;
 }
+.about{
+    text-align: center;
+    padding-bottom: 4%;
+}
 
 #about-text {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 1.5em;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
 }
 
+.contact{
+    text-align: center;
+}
+
+#email{
+    text-align: center;
+}
+
+#phone{
+    text-align: center;
+}
 button {
     background-color: #f1f1f1;
     border-radius: 10px;
