@@ -107,7 +107,10 @@ button {
     cursor: pointer;
     float: right; /* Float the buttons to the right */
 }
-
+#buttons{
+    padding-right: 2%;
+    padding-top: 1%;
+}
 main {
     padding: 1em;
 }
