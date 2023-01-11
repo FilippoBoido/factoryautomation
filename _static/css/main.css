@@ -61,7 +61,7 @@ header nav ul li a:hover {
 }
 
 .transparent-box {
-    background-color: rgba(46, 46, 103, 0.5);
+    background-color: rgba(17, 17, 119, 0.5);
     /* This will make the box semi-transparent */
     position: relative;
     margin: auto;
