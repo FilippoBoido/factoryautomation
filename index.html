@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Factory Automation</title>
+    <title>Agile Automation Technologies GmbH</title>
     <link rel="stylesheet" type="text/css" href="_static/css/main.css">
 </head>
 
@@ -14,11 +14,13 @@
         </video>
         
         <h1 id="title"></h1>
+        <hr class="separator">
+        <h2 id="description"></h2>
         <nav>
             <ul>
-                <li><a href="#about" class="about"></a></li>
+                <li><a href="#boxHeaderServices"  id="servicesHeader"></a></li>
                 <!--<li><a href="#services" id="services">Dienstleistungen</a></li>-->
-                <li><a href="#contact" class="contact"></a></li>
+                <li><a href="#boxHeaderContact"  id="contactHeader"></a></li>
             </ul>
 
         </nav>
@@ -31,67 +33,64 @@
 
     <main class="site-container">
         <div class="transparent-box">
-            <section id="about">
-                <h2 class="about"></h2>
-                <p id="about-text"></p>
+            <section id="services-section">
+                <h2 id="boxHeaderServices"></h2>
+                <hr>
+                <p id="services1" class="services"></p>
+                <p id="services2" class="services"></p>
+                <p id="services3" class="services"></p>
+                <p id="services4" class="services"></p>
+                <p id="services5" class="services"></p>
+                <p id="services6" class="services"></p>
             </section>
-            <section id="contact">
-                <h2 class="contact"></h2>
-                <p id="email">Email: filippo.boido@factoryautomation.info</p>
+
+        </div>
+
+        <div class="transparent-box">
+
+            <section class="contact">
+                <h2 class="contact" id="boxHeaderContact"></h2>
+                <hr>
+                <p id="companyName"></p>
+                <p id="location"></p>
+                <p id="email"></p>
                 <p id="phone"></p>
             </section>
         </div>
     </main>
     <footer>
-        <p>Copyright © 2024 Filippo Boido</p>
+        <p>Copyright © 2024 Agile Automation Technologies GmbH</p>
     </footer>
     <script>
-        function germanText(){
-            document.getElementById('title').innerHTML = 'Sondermaschinen und Backend Softwareentwicklung';
-            var about = document.getElementsByClassName('about')
-            Array.from(about).forEach((element) => {
-                element.innerHTML = 'Über mich'; 
-            });    
-            document.getElementById('about-text').innerHTML = 
-            'Mein Name ist Filippo Boido und ich bin ein Softwareentwickler spezialisiert im Bereich der Automatisierungstechnik.</br> \
-            Ich habe jahrelange Erfahrung bei der Entwicklung von sicherem und hochwertigem Code für Sondermaschinen und in der Backend-Entwicklung mit Python.</br>\
-            Meine Fähigkeiten umfassen das erfolgreiche Lösen von komplexen technischen Herausforderungen und ich arbeite ständig daran, mein Wissen und meine Expertise zu verbessern. </br> \
-            Verantwortungsvolle und anspruchsvolle Aufgaben sind mir nicht fremd und ich bin darauf bedacht, erfolgreiche Projekte zu liefern.</br> \
-            Ich bin davon überzeugt, dass die Entwicklung von qualitativ hochwertigem Code die Grundlage für erfolgreiche Projekte ist, und ich lege daher großen Wert auf eine saubere und strukturierte Arbeitsweise.</br> \
-            Als Teamplayer bin ich motiviert, mein Know-how und meine Erfahrungen in das Team einzubringen und freue mich darauf, mit Kollegen zusammenzuarbeiten,</br> \
-            um erfolgreiche Projekte umzusetzen und die Ziele der Organisation zu erreichen.';
-            //document.getElementById('services').innerHTML = 'Dienstleistungen';
-            var contact = document.getElementsByClassName('contact')
-            Array.from(contact).forEach((element) => {
-                element.innerHTML = 'Kontakt'; 
-            });
-            document.getElementById('phone').innerHTML = 'Telefon: +49 162 5834531';
+        function loadText(language) {
+            let url;
+            if (language === 'german') {
+                url = '_static/text/german.json';
+            } else if (language === 'english') {
+                url = '_static/text/english.json';
+            } else {
+                console.error('Invalid language specified');
+                return;
+            }
+            fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                for (var key in data) {
+                    if (data.hasOwnProperty(key)) {
+                        var element = document.getElementById(key);
+                        if (element) {
+                            element.innerHTML = data[key];
+                        }
+                    }
+                }
+            })
+            .catch(error => console.error('Error loading text:', error));
+
         }
 
-        function englishText(){
-            document.getElementById('title').innerHTML = 'Special machines and backend software development';
-            var about = document.getElementsByClassName('about')
-            Array.from(about).forEach((element) => {
-                element.innerHTML = 'About me'; 
-            });
-            document.getElementById('about-text').innerHTML = 
-            'My name is Filippo Boido and I am a software developer specialized in industrial automation.</br> \
-            With years of experience in developing safe and high-quality code for specialized machines and backend development using Python,</br> \
-            I consider myself an expert in working with different programming and scripting languages and possess deep knowledge in the field of industrial automation.</br> \
-            I possess the ability to successfully solve complex technical challenges and I am always striving to improve my knowledge and skills.</br> \
-            Responsible and challenging tasks are not new to me, and I am fully committed to delivering successful projects.</br> \
-            My conviction is that the development of high-quality code is the foundation for successful projects and place therefore great emphasis on clean and structured work.</br> \
-            As a team player, I am motivated to bring my expertise and experience to the team and look forward to collaborating with colleagues to deliver successful projects and achieve the goals of the organization.';
-            //document.getElementById('services').innerHTML = 'Services';
-            var contact = document.getElementsByClassName('contact')
-            Array.from(contact).forEach((element) => {
-                element.innerHTML = 'Contact'; 
-            });
-            document.getElementById('phone').innerHTML = 'Phone: +49 162 5834531';
-        }
-
-
-        window.onload = germanText;
+        let germanText = function() {loadText('german')};
+        let englishText = function() {loadText('english')};
+        window.onload = germanText
         // English button
         document.getElementById('english-btn').addEventListener('click', englishText);
         // German button
